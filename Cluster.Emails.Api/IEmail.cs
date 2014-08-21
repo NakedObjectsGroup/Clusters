@@ -7,7 +7,7 @@ using NakedObjects;
 namespace Cluster.Emails.Api
 {
     /// <summary>
-    /// This is an email that is created and persisted by the Emails Api
+    /// Result interface representing an email that is created and persisted by the Emails cluster.
     /// </summary>
     public interface IEmail : IExternalDocument
     {

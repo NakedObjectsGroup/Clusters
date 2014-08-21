@@ -7,7 +7,7 @@ using NakedObjects.Audit;
 namespace Cluster.Audit.Impl
 {
     /// <summary>
-    /// Can be registered as a Default Authorizer to handle all namespaces. Delegates to injected AuditEventRepository
+    /// Can be registered as a Default Auditro to handle all namespaces. Delegates to injected AuditService
     /// </summary>
     public class DefaultAuditor : IAuditor
     {

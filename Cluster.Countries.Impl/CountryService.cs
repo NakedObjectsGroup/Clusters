@@ -22,12 +22,12 @@ namespace Cluster.Countries.Impl
             return Container.Instances<Country>();
         }
 
-        public IQueryable<ICountry> FindCountryByName([RegularExpression(Country.CountryNameRegEx)] string matching)
+        public IQueryable<ICountry> FindCountryByName([RegularExpression(Constants.CountryNameRegEx)] string matching)
         {
             return Container.Instances<Country>().Where(x => x.Name.ToUpper().Contains(matching.Trim().ToUpper()));
         }
 
-        public ICountry FindCountryByCode([RegularExpression(Country.ISOCountryCodeRegEx)] string code)
+        public ICountry FindCountryByCode([RegularExpression(Constants.ISOCountryCodeRegEx)] string code)
         {
             return Container.Instances<Country>().Single(x => x.ISOCode == code);
         }

@@ -37,11 +37,11 @@ namespace Cluster.Documents.Impl
 
         [Disabled]
         public virtual NoteStatus Status { get; set; }
-      
+
 
         public override string DisableText()
         {
-            return Container.IsPersistent(this) ? "Use 'Add To Note' action.": null;
+            return Container.IsPersistent(this) ? "Use 'Add To Note' action." : null;
         }
 
         public override DocumentType DefaultType()
@@ -57,7 +57,7 @@ namespace Cluster.Documents.Impl
         #region AddToNote (Action)
 
         [MemberOrder(10)]
-        public void AddToNote(string text )
+        public void AddToNote(string text)
         {
             Text += "\n\n" + text;
             AddUserAndTimeStampToText();
@@ -65,14 +65,14 @@ namespace Cluster.Documents.Impl
         }
 
         public string DisableAddToNote()
-{
-  var rb = new ReasonBuilder();
-  rb.AppendOnCondition(Status == NoteStatus.Finished, "Cannot add to a Finished note. Start a new one instead");
-  return rb.Reason;
-}
+        {
+            var rb = new ReasonBuilder();
+            rb.AppendOnCondition(Status == NoteStatus.Finished, "Cannot add to a Finished note. Start a new one instead");
+            return rb.Reason;
+        }
 
-        #endregion  
-    
+        #endregion
+
         #region Finish (Action)
         [MemberOrder(20)]
         public void FinishThisNote()

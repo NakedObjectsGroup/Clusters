@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppSettings.cs" />
+    <Compile Include="Constants.cs" />
     <Compile Include="CountryCodes.cs" />
     <Compile Include="ICountryService.cs" />
     <Compile Include="ICountry.cs" />

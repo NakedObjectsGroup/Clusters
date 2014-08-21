@@ -51,10 +51,6 @@ namespace Cluster.Documents.Impl
         }
         #endregion
 
-
-
-
-
         #region Properties
         [Hidden]
         public virtual int Id { get; set; }
@@ -128,8 +124,6 @@ namespace Cluster.Documents.Impl
 
         #endregion
 
-
-
         #region Holders Collection of type IDocumentHolder
 
         private ICollection<DocumentHolderLink> _Holder = new List<DocumentHolderLink>();
@@ -159,7 +153,6 @@ namespace Cluster.Documents.Impl
             PolymorphicNavigator.RemoveLink<DocumentHolderLink, IDocumentHolder, Document>(value, this);
         }
         #endregion
-
 
         #region Actions
         [MemberOrder(100)]

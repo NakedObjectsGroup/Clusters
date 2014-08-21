@@ -26,7 +26,7 @@ namespace Cluster.Audit.Impl
         }
         #endregion
 
-        #region TargetObject Property of type IAuditedObject ('role' interface)
+        #region TargetObject Property of type IDomainInterface ('role' interface)
 
         [Hidden]
         public virtual ObjectAuditedEventTargetObjectLink TargetObjectLink { get; set; }
