@@ -16,6 +16,7 @@ Hard Rules
 - A 'service' interface defines a service for which there is an implementation in the Impl. Other clusters may expect to have an implementation of this service injected into them.
 - A 'result' interface is a deliberately-restricted view of a domain type that is defined within the Impl and may be created and/or retrieved by means of a service interface method. Good practice says that result interfaces should hide data behind higher-value behaviours where possible; any properties that are exposed will be read-only except in rare cases.
 - A 'role' interface is intended to be implemented by objects in other clusters in order that those objects can take advantage of behaviour implemented in the cluster. Thus, those role interfaces may form input-parameters for methods on the service API. Additionally, the cluster Impl may define ContributedActions for that role interface.
+6. Clusters should form a natural hierarchy of depenency: if the Api and Impl were treated as a single entity there should be no cicular dependencies between them.  This is a subtle point, not the same thing as saying that there should be no circular dependencies between projects (which would not compile anyway). The anti-pattern to avoid is where ClusterA.Impl depends on ClusterB.Api while ClusterB.Impl depends on ClusterA.Api! 
 
 It follows from the above that:
  - Classes in a Cluster Impl may not inherit from classes in other clusters: this is a deliberate constraint.
