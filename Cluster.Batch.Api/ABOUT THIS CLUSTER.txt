@@ -1,0 +1,5 @@
+﻿Allows for the specification of processes to be run an scheduled intervals.
+These processes, the calling frequency, start and end dates, can be defined, managed, and monitored through the UI.
+(e.g. see when exactly it was run, and the outcome summary).
+The service would be called at regular, minimal-resolution intervals (e.g. daily, or more frequently) called by
+the Windows Task Scheduler, then inside the cluster domain code would determine which processes to fire.
