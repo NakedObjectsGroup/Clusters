@@ -25,7 +25,7 @@ It follows from the above that:
 Optional Rules
 ==============
 
-The following represent good practices, but are not strictly definitional to the cluster pattern:
+The following represent good practices which are followed in this code base, but are not strictly definitional to the cluster pattern:
 
 6. Each cluster defines its own DbContext and mappings
 7. Each cluster manages its own authorization via a standard pattern.  The roles used by this authorizer are defined on the cluster API.
