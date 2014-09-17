@@ -7,7 +7,6 @@ using Cluster.Users.Api;
 using Cluster.System.Api;
 using NakedObjects;
 using System.Text;
-using Cluster.Emails.Api;
 using System.Net.Mail;
 using NakedObjects.Services;
 using Microsoft.AspNet.Identity.EntityFramework;

@@ -63,7 +63,6 @@
     <Compile Include="Helpers.cs" />
     <Compile Include="IEmail.cs" />
     <Compile Include="IEmailService.cs" />
-    <Compile Include="IEmailAddressProvider.cs" />
     <Compile Include="IHasEmailDetails.cs" />
     <Compile Include="IEmailDetails.cs" />
     <Compile Include="AppSettings.cs" />

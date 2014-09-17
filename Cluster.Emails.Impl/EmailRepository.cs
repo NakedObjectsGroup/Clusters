@@ -10,7 +10,6 @@ using System.Net.Mail;
 using Cluster.System.Api;
 using Cluster.Documents.Api;
 using System.ComponentModel;
-using Cluster.Users.Api;
 
 namespace Cluster.Emails.Impl
 {
@@ -25,8 +24,6 @@ namespace Cluster.Emails.Impl
         public IDocumentService DocumentService { set; protected get; }
 
         public IEmailService EmailService { set; protected get; }
-
-        public IUserService UserService { set; protected get; }
 
         #endregion
 
@@ -62,13 +59,6 @@ public string Validate1CreateEmail(string fromEmailAddress)
     return Helpers.ValidateEmailAddress(fromEmailAddress);
 }
       
-        public string Default1CreateEmail()
-      {
-          var userEmail = UserService.CurrentUser().EmailAddress;
-          return userEmail ?? AppSettings.DefaultSender;
-      }
- 
-
         #endregion
 
     }

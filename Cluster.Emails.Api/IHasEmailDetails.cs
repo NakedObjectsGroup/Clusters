@@ -1,4 +1,5 @@
-﻿namespace Cluster.Emails.Api
+﻿using Cluster.System.Api;
+namespace Cluster.Emails.Api
 {
     /// <summary>
     /// Role interface implemented by external object that has EmailDetails managed by the Emails cluster.

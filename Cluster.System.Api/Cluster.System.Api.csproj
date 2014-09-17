@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="IClock.cs" />
     <Compile Include="IDomainInterface.cs" />
+    <Compile Include="IEmailAddressProvider.cs" />
     <Compile Include="IUpdateableEntity.cs" />
     <Compile Include="IEmailSender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

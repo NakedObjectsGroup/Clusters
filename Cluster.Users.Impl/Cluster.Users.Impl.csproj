@@ -109,10 +109,6 @@
     <Compile Include="UserService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Cluster.Emails.Api\Cluster.Emails.Api.csproj">
-      <Project>{82d9a3b1-04d5-47da-a47f-06d0a585878d}</Project>
-      <Name>Cluster.Emails.Api</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Cluster.System.Api\Cluster.System.Api.csproj">
       <Project>{6b67fbde-9f10-4ebd-9dd0-7f390016c661}</Project>
       <Name>Cluster.System.Api</Name>
